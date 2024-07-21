@@ -63,7 +63,7 @@ function Footer() {
       </div>
       <div className='bg-gray-800 py-4'>
         <div className='container mx-auto'>
-          <p className='text-center text-gray-300 text-sm'>&copy, {new Date().getFullYear()} Ola Cabs. All rights reserved.</p>
+          <p className='text-center text-gray-300 text-sm'>@  {new Date().getFullYear()} Ola Cabs. All rights reserved.</p>
         </div>
       </div>
 
