@@ -100,7 +100,19 @@ const BookRide = () => {
                 className='border-none outline-none'
                 onFocus={onFocused}
               />
-              
+              {
+                activeField === "destinationLocation" &&
+                formik.values?.destinationLocation?.length>0 && (
+                  <div className=''>
+                    <SearchReasult 
+                      setActiveField={setActiveField}
+                      latitude_Key={"destination_latitude"}
+                      longitude_key={"destination_longitude"}
+                      area_key={"destination_area"}  
+                    />
+                  </div>
+                )
+              }
             </div>
             {
               formik.touched.destinationLocation && formik.errors.destinationLocation && (
